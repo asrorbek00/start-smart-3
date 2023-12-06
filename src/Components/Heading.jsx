@@ -14,7 +14,7 @@ const Heading = () => {
             
         </div>
         <div className='animat' data-aos='fade-up' data-aos-duration='1000'>
-          
+              
         </div>
         </div>
         { data && data.map((info)=>{

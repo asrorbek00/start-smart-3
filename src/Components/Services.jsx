@@ -9,7 +9,7 @@ const Services = () => {
     
   return (
     <div>
-       <div className=" ml-8 mr-11 pt-10 mt-4" id="services">
+       <div className=" ml-8 mr-11 pt-10 -mt-3" id="services">
       <h1 className="text-center lg:text-5xl  md:text-4xl sm:text-3xl lg:mb-0 md:mb-8 sm:mb-10 text-[#DBFF45] py-5" data-aos="fade-up" data-aos-duration='1000'>XIZMATLAR</h1>
       <div>
 

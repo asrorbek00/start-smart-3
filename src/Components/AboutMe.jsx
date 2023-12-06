@@ -21,10 +21,12 @@ const AboutMe = () => {
           return (
             <div className="lg:ml-28 md:ml-20 sm:ml-5 sm:gap-0  flex  mb-24" key={about.id}>
             <div className="  w-[100%] rounded-[40%]">
+            <img src="public/bgOval.png" alt="" className=" w-96 mt-3 -ml-28" />
+            <img src="public/bgOval.png" alt="" className=" w-96 -mt-[590px] ml-2" />
               <img
                 src={about.about_image}
                 alt=""
-                className=" rounded-3xl lg:w-[300px] lg:h-[390px] mt-20  sm:w-0 sm:h-0 "
+                className=" rounded-3xl lg:w-[300px] lg:h-[390px] -mt-[530px] sm:w-0 sm:h-0 "
                 data-aos="fade-right"
               />
             </div>

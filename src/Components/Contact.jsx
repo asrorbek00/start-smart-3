@@ -18,6 +18,7 @@ const Contact = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   
    const sendAlert = ()=> toast.success('Your message send')
   const [formData, setFormData] = useState({
@@ -76,20 +77,20 @@ const Contact = () => {
   
   return (
     <>
-    <div className="mt-24  border-[1px] bg-[#1D232A]" id="contact">
+    <div className=" lg:mt-[600px] sm:mt-10 border-[2px] border-[#2a2a2a] bg-[#1D232A]  " id="contact">
       <h1
-        className="lg:text-6xl md:text-5xl  py-2 sm:text-3xl  text-center text-[#DBFF45]"
+        className="lg:text-6xl md:text-5xl  py-2 sm:text-3xl mb-20  text-center text-[#DBFF45]"
         data-aos="fade-up"
       >
         Bog`laning
       </h1>
 
-      <div className=" px-14  grid lg:grid-cols-3 gap-3  py-5">
-        
+      <div className=" border-[2px] border-[#2a2a2a]  px-14  grid lg:grid-cols-3 gap-3  py-5">
+        <div className="border-[2px] px-2 py-2  border-[#2a2a2a]  ">
           <div
             data-aos="fade-right"
             data-aos-duration="500"
-            className="flex flex-col items-center cursor-pointer border-2 border-gray-500 py-5 px-3 rounded-lg shadow-black shadow-lg hover:border-gray-300 "
+            className="flex flex-col items-center cursor-pointer border-gray-500 py-5 px-3 rounded-lg shadow-slate-950   shadow-sm hover:shadow-gray-600 "
           >
             <span>
               <IoCall fill="yellow" size={20} />
@@ -99,11 +100,13 @@ const Contact = () => {
             +998 95 204 08 00
             </a>
           </div>
+          </div>
+          <div className="border-[2px] px-2 py-2  border-[#2a2a2a]  ">
         <a href="https://www.google.com/maps/place/Start+Smart+Company/@40.755972,72.3634861,17z/data=!3m1!4b1!4m6!3m5!1s0x38bcedc34aeb9245:0x4ed71f4bc649d008!8m2!3d40.755968!4d72.366061!16s%2Fg%2F11vkjbq_0d?entry=ttu">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="flex  flex-col items-center cursor-pointer border-2 border-gray-500 py-5 px-3 rounded-lg shadow-black shadow-lg hover:border-gray-300"
+            className="flex  flex-col items-center cursor-pointer py-5 px-3 rounded-lg   shadow-slate-950 shadow-sm hover:shadow-gray-600"
           >
             <span>
               <MdLocationPin fill="yellow" size={23} />
@@ -112,11 +115,13 @@ const Contact = () => {
             <a className="tracking-2">Q948+CCV Андижан</a>
           </div>
         </a>
+        </div>
+        <div className="border-[2px] px-2 py-2  border-[#2a2a2a]  ">
         <a href={info.instagram}>
           <div
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="flex flex-col items-center cursor-pointer border-2 border-gray-500 py-5 px-3 rounded-lg shadow-black shadow-lg hover:border-gray-300"
+            className="flex flex-col items-center cursor-pointer py-5 px-3 rounded-lg shadow-slate-950 shadow-sm hover:shadow-gray-600"
           >
             <span>
               <FaInstagram fill="yellow" size={20} />
@@ -125,44 +130,56 @@ const Contact = () => {
             <a className="tracking-2">@start_smart_smm</a>
           </div>
         </a>
+        </div>
       </div>
       <form onSubmit={handleSubmit}>
       <ToastContainer/>
       <div
-        className="py-20  px-10 lg:ml-12 grid border-[1px] bg-[#1D232A] lg:grid-cols-2 md:grid-cols-2 gap-10 mt-12 lg:w-2/3 md:w-4/5 sm:grid-cols-1  rounded-xl"
+        className="pt-7   lg:ml-12 grid border-[2px] border-[#2a2a2a] bg-[#1D232A] lg:grid-cols-2 md:grid-cols-2   lg:w-3/3 md:w-4/5 sm:grid-cols-1  rounded-xl"
         data-aos="fade-up"
       >
       
-        <div className="flex flex-col gap-8 ">
-        
+        <div className="flex flex-col  px-2 ">
+        <div className="border-[2px] py-3  border-[#2a2a2a] px-2">
           <input
             type="text"
-            placeholder="Ism"
-            className="rounded-xl shadow-xl pl-8 py-3"
+            placeholder="Ism.."
+            className="rounded-3xl shadow-xl pl-8 py-3 w-full"
             required  name="first_name" value={formData.first_name} onChange={handleChange}
           />
+          </div>
+          <div className="border-[2px] border-t-0 py-3 px-2 border-[#2a2a2a]">
           <input
             type="text"
-            placeholder="Familiya"
-            className="rounded-xl shadow-xl pl-8 py-3"
+            placeholder="Familiya..."
+            className="rounded-3xl shadow-xl pl-8 py-3 w-full"
             required  name="last_name" value={formData.last_name} onChange={handleChange}
           />
+          </div>
+          <div className="border-[2px] py-3 border-t-0 px-2 border-[#2a2a2a]">
           <input
             type="number"
             placeholder="Tel.."
-            className="rounded-xl shadow-xl pl-8 py-3"
+            className="rounded-3xl shadow-xl pl-8 py-3 w-full"
             required  name="phone" value={formData.phone} onChange={handleChange}
           />
+          </div>
         </div>
-        <div className="flex  gap-5">
+        
+        <div className="flex flex-col -ml-3  border-[2px] border-[#2a2a2a] ">
+        <div className="border-b-[2px] py-3 px-3 border-[#2a2a2a] pl-3">
           <textarea
             placeholder="Xabar.."
-            className="shadow-xl pt-3 pl-3 rounded-xl h-36 w-80"
+            className="shadow-3xl pt-3 pl-3 rounded-xl h-48  w-full"
             required  name="messages" value={formData.messages} onChange={handleChange}
           />
-          <button type="submit" className="btn btn-outline btn-accent w-20 mt-48 lg:-ml-20 md:-ml-11 ">
-            Yuborish
+          </div>
+          <div className="border-l-[2px] py-3 lg:ml-64 sm:ml-0 border-[#2a2a2a] ">
+          <button type="submit" className="btn text-[#dbff45] rounded-3xl py-3 px-2  w-2/3 md:-ml-11 lg:ml-10 sm:ml-16  shadow-gray-700">
+            Xabar Yuborish
           </button>
+          </div>
+          
         </div>
        
       </div>

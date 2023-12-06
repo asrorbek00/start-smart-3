@@ -17,11 +17,11 @@ const Footer = () => {
   const {data ,isPending , error} = useFetch(url)
   return (
     <>
-    <div className='py-20 grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 lg:gap-6 sm:gap-2 sm:ml-2 foot md:ml-10' data-aos="fade-up">
+    <div className='py-20 grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 lg:gap-6 sm:gap-2 sm:ml-2 foot lg:ml-0 md:ml-10 bg-[#1D232A]' >
       {data && data.map((info)=>{
         return<>
 
-        <img src='public/logo.png' alt="" className='lg:w-80 md:w-72 sm:w-52 -mt-5 cursor-pointer ' />
+        <img src={info.logo} alt="" className='lg:w-80 md:w-72 sm:w-32 mb-10 -mt-5 cursor-pointer ' />
       
      <div className='flex-row gap-2 w-fit' data-aos="fade-up">
          <h2 className='text-xl text-white '>Menyu</h2>
@@ -64,7 +64,7 @@ const Footer = () => {
     })}
     
     </div>
-    <hr  className='border-[1px] w-2/3 lg:ml-[18%] md:ml-[15%] sm:ml-[10%]'/>
+    <hr  className='border-[1px] w-2/3 lg:ml-[18%] md:ml-[15%] sm:ml-[10%] '/>
     <p className='lg:ml-[44%] md:ml-[40%] sm:ml-[33%] mb-4 mt-2' >2023 @Start Smart</p>
     </>
   )

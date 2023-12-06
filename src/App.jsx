@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
-import Heading from './components/Heading'
-import Services from './components/Services'
-import AboutMe from './components/AboutMe'
 import About from './components/About'
 import OurWorks from './components/OurWorks'
-import OurTeam from './components/OurTeam'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
 import { useFetch } from './hooks/useFetch'
 import Footer from './Components/Footer'
 import Loading from './Components/Loading'
+import AboutMe from './Components/AboutMe'
+import Contact from './Components/Contact'
+import OurTeam from './Components/OurTeam'
+import Portfolio from './Components/Portfolio'
+import Services from './Components/Services'
+import Heading from './Components/Heading'
 
 
 

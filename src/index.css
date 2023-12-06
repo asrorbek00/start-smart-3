@@ -4,12 +4,20 @@
 @tailwind utilities;
 
 html{
-  background: url(/public/Group\ 5448.png) no-repeat ;
+  background: url(/public/Group\ 5448.png) no-repeat #202020 ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
  
+}
+textarea{
+  resize: none;
+}
+a:hover{
+  text-decoration: underline;
+
 }
 
 .navli:hover{
@@ -136,14 +144,15 @@ h1{
   }
   
   #hamkor-1{
-    margin-top: -20px;
+    margin-top: -60px;
   }
   #hamkor-2{
     margin-left: -30px;
+    margin-top: -30px;
   }
   #hamkor-3{
     margin-left: -40px;
-    margin-top: -10px;
+    margin-top: -40px;
   }
   #hamkor-4{
     margin-left: -20px;
@@ -180,6 +189,10 @@ input[type=number] {
   .navli{
     display: none;
   }
+  .smm{
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #DBFF45;
+  }
   .nav-contact{
     display: none;
   }
@@ -193,3 +206,4 @@ input[type=number] {
     display: none;
   }
 }
+
